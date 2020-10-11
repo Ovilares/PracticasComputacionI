@@ -1,6 +1,7 @@
-# /* Calculadora
-# Autor: Oliver Josué Padilla Quintanilla
-# Fecha: 11 de octubre de 2020 */
+/* Calculadora
+Autor: Oliver Josué Padilla Quintanilla
+Fecha: 11 de octubre de 2020 
+*/
 
 
 #include <iostream>
