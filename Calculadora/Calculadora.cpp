@@ -32,7 +32,7 @@ int main()
         cin >> c;
         e = a % c;
         cout << "El resultado es:" << e << endl;
-        return "-";
+        return 0;
     }
     cout << "Ingrese el segundo numero" << endl;
     cin >> c;
