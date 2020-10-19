@@ -60,6 +60,7 @@ void ImprimirArreglo(array<float, LEN> arreglo)
 array<float, LEN> LlenarArreglo()
 {
     // Proceso
+    cout << "Ingrese los elementos del arreglo, uno a la vez" << endl;
     array <float, LEN> A{};
     for (int i = 0; i < LEN; i++)
     {
@@ -75,7 +76,7 @@ array<float, LEN> LlenarArreglo()
 array<float, LEN> MultiplicarArreglo(array<float, LEN> arreglo, float multiplo)
 {
     // Proceso
-    for (int i = 0; i < LEN; i++) 
+    for (int i = 0; i < LEN; i++)
     {
         arreglo[i] = arreglo[i] * multiplo;
     }
@@ -87,7 +88,7 @@ array<float, LEN> MultiplicarArreglo(array<float, LEN> arreglo, float multiplo)
 array<float, LEN> SumarArreglos(array<float, LEN> arr1, array<float, LEN> arr2)
 {
     // Proceso
-    for (int i = 0; i < LEN; i++) 
+    for (int i = 0; i < LEN; i++)
     {
         arr1[i] = arr1[i] + arr2[i];
     }
