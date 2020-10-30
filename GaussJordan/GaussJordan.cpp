@@ -91,6 +91,31 @@ void GaussJordan(matriz& miMatriz)
 
     for (int i = 0; i < variables; i++)
     {
+        if (miMatriz[i][i] == 0)
+        {
+            array <array<int, 4>, 3> temp = {};
+
+            for (int k = i + 1; k < variables; k++)
+            {
+                for (int j = 0; j <= variables; j++)
+                {
+                    temp[i][j] = miMatriz[i][j];
+                    miMatriz[i][j] = miMatriz[k][j];
+                    miMatriz[k][j] = temp[i][j];
+                }
+            }
+        }
+
+        if (miMatriz[i][i] == 0)
+        {
+            cout << endl << "Hay mas ecuaciones que variables, defina otro valor para variables" << endl;
+            break;
+        }
+
+    }
+
+    for (int i = 0; i < variables; i++)
+    {
         float a = miMatriz[i][i];
 
         for (int j = 0; j <= variables; j++)
@@ -98,9 +123,9 @@ void GaussJordan(matriz& miMatriz)
             miMatriz[i][j] = miMatriz[i][j] / a;
         }
 
-        for (int k = i+1; k < variables; k++)
+        for (int k = i + 1; k < variables; k++)
         {
-            float b = - miMatriz[k][i];
+            float b = -miMatriz[k][i];
             for (int j = 0; j <= variables; j++)
             {
                 float z = miMatriz[i][j] * b;
@@ -111,7 +136,7 @@ void GaussJordan(matriz& miMatriz)
 
     for (int i = variables - 1; i >= 0; i--)
     {
-        for (int k = i -1; k >= 0; k--)
+        for (int k = i - 1; k >= 0; k--)
         {
             float b = -miMatriz[k][i];
             for (int j = variables; j >= 0; j--)
@@ -132,7 +157,7 @@ void ImprimirSolucion(matriz& miMatriz)
 {
     cout << endl;
     int variables = miMatriz.size();
-    
+
     for (int i = 0; i < variables; i++)
     {
         if (miMatriz[i][i] == 0)
