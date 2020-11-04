@@ -21,7 +21,8 @@ void Punto2D::Trasladar(float a, float b)
 
 void Punto2D::RotarRespectoAlOrigen(float a)
 {
-	
+	x = x * cos(a) - y * sin(a);
+	y = x * sin(a) + y * cos(a);
 }
 
 void Punto2D::Escalar(float a, float b)
