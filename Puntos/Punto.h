@@ -12,7 +12,7 @@ class Punto2D
 {
 public:
 
-    float SetPosicion(float a, float b);
+    void SetPosicion(float a, float b);
     void Trasladar(float a, float b);
     void RotarRespectoAlOrigen(float a);
     void Escalar(float a, float b);
