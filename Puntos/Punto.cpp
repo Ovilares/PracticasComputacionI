@@ -19,10 +19,13 @@ void Punto2D::Trasladar(float a, float b)
 	y += b;
 }
 
-void Punto2D::RotarRespectoAlOrigen(float a)
+void Punto2D::RotarRespectoAlOrigen(float g)
 {
-	x = x * cos(a) - y * sin(a);
-	y = x * sin(a) + y * cos(a);
+	float r = g * (3.14159 / 180);
+	float rx = x * (cos(r)) - y * (sin(r));
+	float ry = x * (sin(r)) + y * (cos(r));
+	x = rx;
+	y = ry;
 }
 
 void Punto2D::Escalar(float a, float b)
