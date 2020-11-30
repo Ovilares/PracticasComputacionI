@@ -1,3 +1,5 @@
+// Oliver Josué Padilla Quintanilla
+
 #include <iostream>
 #include <string>
 #include <array>
@@ -38,7 +40,25 @@ int main()
     */
     for (int i = 0; i < numArticulos; i++)
     {
-        // TODO
+        string nuevoArticulo;
+        string* nuevoArticuloPtr = nullptr;
+        cout << "Nombre del articulo " << i << ": ";
+        cin >> nuevoArticulo;
+        misArticulos[i] = nuevoArticulo;
+        nuevoArticuloPtr = &misArticulos[i];
+
+        for (int j = 0; j < numBodegas; j++)
+        {
+            cout << "Desea agregar " << *nuevoArticuloPtr << " a la bodega " << misBodegas[j].ObtenerNombre() << "? (1 si,0 no): ";
+            int decision = 0;
+            cin >> decision;
+            if (decision)
+            {
+                misBodegas[j].AgregarArticulo(nuevoArticuloPtr);
+                cout << "Articulo agregado exitosamente" << endl;
+            }
+        }
+        cout << endl;
     }
 
     // Imprimimos el inventario de cada bodega
