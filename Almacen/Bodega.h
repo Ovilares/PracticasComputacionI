@@ -1,4 +1,5 @@
 
+#ifndef ALMACEN_BODEGA_H
 #define ALMACEN_BODEGA_H
 
 #include <string>
