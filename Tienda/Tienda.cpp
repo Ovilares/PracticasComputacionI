@@ -123,7 +123,7 @@ void AgregarArticuloAAlmacenes(Articulo* articuloPtr, array<Almacen, NUM_ALMACEN
 			cin >> cantidad;
 			// Le informamos si la cantidad ingresada es válida (no genera inventarios negativos) y se llevó a cabo la operación
 			if (todosAlmacenes[i].ModificarInventarioArticulo(articuloPtr, cantidad))
-				cout << "Operacion exitosa" << endl;
+				cout << "Operacion exitosa" <<endl;
 			else
 				cout << "Operacion fallida" << endl;
 		}
