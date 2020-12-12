@@ -1,32 +1,38 @@
-
 #include "Almacen.h"
 
 bool Almacen::ModificarInventarioArticulo(Articulo* artPtr, int cantidad)
 {
-	bool aux = 1;
-	for (int j = 0; j < articulos.size(); j++)
+	
+	for (int i = 0; i < articulos.size(); i++)
 	{
-		if ((artPtr != articulos[j].articulo) && (cantidad >= 0))
+		int temp = articulos[i].cantidad;
+		if (artPtr->nombre == articulos[i].articulo->nombre)
 		{
-			articulos[j].articulo = artPtr;
-			articulos[j].cantidad = cantidad;
-		}
-		else if (artPtr == articulos[j].articulo)
-		{
-			int temp = articulos[j].cantidad;
-			articulos[j].cantidad += cantidad;
-			if (articulos[j].cantidad < 0)
+			articulos[i].cantidad += cantidad;
+			if (articulos[i].cantidad < 0)
 			{
-				articulos[j].cantidad = temp;
-				aux = 0;
+				articulos[i].cantidad = temp;
+				return false;
+			}
+			else
+			{
+				return true;
 			}
 		}
-		else 
-		{
-			aux = 0;
-		}
 	}
-	return aux;
+	
+	if (cantidad >= 0)
+	{
+		ArticuloAlmacenado nuevoart;
+		nuevoart.articulo = artPtr;
+		nuevoart.cantidad = cantidad;
+		articulos.push_back(nuevoart);
+		return true;
+	}
+	else 
+	{
+		return false;
+	}
 }
 
 string Almacen::ObtenerNombre() const
