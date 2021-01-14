@@ -18,6 +18,13 @@ for i in range(0, ec):
 
 ''' Eliminación de Gauss '''
 for i in range(0,ec):
+  ''' Cambiar renglones con 0s'''
+  for c in range(i+1,ec):
+    while MatEc[i][i]==0:
+      Aux = MatEc[i]
+      MatEc[i]= MatEc[c]
+      MatEc[c]= Aux
+  ''' Continuación '''
   a = MatEc[i][i]
   for j in range (0, col):
     MatEc[i][j] = MatEc[i][j]/a
@@ -40,4 +47,4 @@ print('\n')
 print("Solución:")
 for i in range(0, ec):
   print(f"x{i} =", MatEc[i][ec])
-  
+
