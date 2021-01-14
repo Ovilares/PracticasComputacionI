@@ -42,4 +42,4 @@ print(MatEc)
 
 ''' Impresión de resultados '''
 for i in range(0, ec):
-  print("x",i, "= ", MatEc[i][ec])
+  print(f"x{i} =", MatEc[i][ec])
