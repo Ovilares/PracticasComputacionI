@@ -4,7 +4,7 @@
 El desarrollo de esta práctica tiene como objetivo realizar una comparación entre los tiempos que tarda en ejecutarse un algorítmo que aplica el método de Gauss Jordan para resolver sistemas de ecuaciones, implementado en 2 lenguajes de programción diferentes: Python y C++. Pero además, dentro del lenguaje de programación python, existe una librería llamada Numpy, que está especializada en trabajar con arreglos multidimensionales (por ejemplo con matrices), entonces también se desarrollo un algorítmo utilizando esta librería. En total serán tres los algorítmos que se van a comparar, con la finalidad de ver si cambia el tiempo de jecución entre ellos, y de ser así determinar cual es el más eficiente.
 
 ## Objetivos
-Determinar sí hay y cual es el algorítmo más eficiente en cuanto al tiempo de ejecución que le toma aplicar el método de Gauss Jordan para resolver sistemas de ecuaciones.
+Determinar si hay y cual es el algorítmo más eficiente en cuanto al tiempo de ejecución que le toma aplicar el método de Gauss Jordan para resolver sistemas de ecuaciones.
 
 ## Metodología
 1. Se escogeran 3 sistemas de ecuaciones para cada tamaño desde 2x2 hasta 5x5, y que sean resolubles.
@@ -13,21 +13,29 @@ Determinar sí hay y cual es el algorítmo más eficiente en cuanto al tiempo de
 4. Los tiempos obtenidos se registraran en una tabla, y al final se calculará un promedio de tiempo para cada algorítmo por cada tamaño de sistemas ecuaciones.
 
 ## Resultados
-C++
+**C++**
 | Sistemas | 2x2 | 3x3 | 4x4 | 5x5 |
 | :------: | :-: | :-: | :-: | :-: |
 | 1 |  |  |  |  |
 | 2 |  |  |  |  |
 | 3 |  |  |  |  |
 
-Python (normal)
+**Python (normal)**
 | Sistemas | 2x2 | 3x3 | 4x4 | 5x5 |
 | :------: | :-: | :-: | :-: | :-: |
 | 1 |  |  |  |  |
 | 2 |  |  |  |  |
 | 3 |  |  |  |  |
 
-Python (Numpy)
+**Python (Numpy)**
+| Sistemas | 2x2 | 3x3 | 4x4 | 5x5 |
+| :------: | :-: | :-: | :-: | :-: |
+| 1 |  |  |  |  |
+| 2 |  |  |  |  |
+| 3 |  |  |  |  |
+
+
+**Promedios**
 | Sistemas | 2x2 | 3x3 | 4x4 | 5x5 |
 | :------: | :-: | :-: | :-: | :-: |
 | 1 |  |  |  |  |
