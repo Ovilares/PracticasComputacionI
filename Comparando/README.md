@@ -8,4 +8,4 @@ Determinar sí hay y cual es el algorítmo más eficiente en cuanto al tiempo de
 
 Metodología
 Se escogeran 3 sistemas de ecuaciones para cada tamaño desde 2x2 hasta 5x5, y que sean resolubles.
-Dentro de cada uno de los códigos se implemento un método para calcular el tiempo de ejecución de los algorítmos. En el caso de pyhon, tanto para el código normal como el que utiliza la librería Numpy se utilizo la librería ==time==
+Dentro de cada uno de los códigos se implemento un método para calcular el tiempo de ejecución de los algorítmos. En el caso de pyhon, tanto para el código normal como el que utiliza la librería Numpy se utilizo la librería ^^time^^
