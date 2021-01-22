@@ -1,7 +1,7 @@
 # Práctica 12: Comparando
 ##### Oliver Josué Padilla Quintanilla
 
-El desarrollo de esta práctica tiene como objetivo realizar una comparación entre los tiempos que tarda en ejecutarse un algorítmo que aplica el método de Gauss Jordan para resolver sistemas de ecuaciones, implementado en 2 lenguajes de programción diferentes: Python y C++. Pero además, dentro del lenguaje de programación python, existe una librería llamada Numpy, que está especializada en trabajar con arreglos multidimensionales (por ejemplo con matrices), entonces también se desarrollo un algorítmo utilizando esta librería. En total serán tres los algorítmos que se van a comparar, con la finalidad de ver si cambia el tiempo de jecución entre ellos, y de ser así determinar cual es el más eficiente.
+El desarrollo de esta práctica tiene como objetivo realizar una comparación entre los tiempos que tarda en ejecutarse un algorítmo que aplica el método de Gauss Jordan para resolver sistemas de ecuaciones, implementado en 2 lenguajes de programción diferentes: Python y C++. Pero además, dentro del lenguaje de programación python, existe una librería llamada Numpy, que está especializada en trabajar con arreglos multidimensionales (por ejemplo con matrices), entonces también se desarrollo un algorítmo utilizando esta librería. En total serán tres los algorítmos que se van a comparar, con la finalidad de ver si cambia el tiempo de ejecución entre ellos, y de ser así determinar cual es el más eficiente.
 
 ## Objetivos
 Determinar si hay y cual es el algorítmo más eficiente en cuanto al tiempo de ejecución que le toma aplicar el método de Gauss Jordan para resolver sistemas de ecuaciones.
@@ -24,9 +24,9 @@ Todos los resultados están registrados en segundos (s).
 **Python (normal)**
 | Sistemas | 2x2 | 3x3 | 4x4 | 5x5 |
 | :------: | :-: | :-: | :-: | :-: |
-| 1 | 0.0005815029144287109 |  |  |  |
-| 2 | 0.0004379749298095703 |  |  |  |
-| 3 | 0.0005388259887695312 |  |  |  |
+| 1 | 0.0005815029144287109 | 0.0004394054412841797 | 0.0004537105560302734 | 0.000462770462036132 |
+| 2 | 0.0004379749298095703 | 0.0005924701690673828 | 0.0004107952117919922 | 0.003591299057006836 |
+| 3 | 0.0005388259887695312 | 0.0003769397735595703 | 0.0004582405090332031 | -------------------- |
 
 **Python (Numpy)**
 | Sistemas | 2x2 | 3x3 | 4x4 | 5x5 |
