@@ -13,6 +13,7 @@ Determinar si hay y cual es el algorítmo más eficiente en cuanto al tiempo de 
 4. Los tiempos obtenidos se registraran en una tabla, y al final se calculará un promedio de tiempo para cada algorítmo por cada tamaño de sistemas ecuaciones.
 
 ## Resultados
+Todos los resultados están registrados en segundos (s).
 **C++**
 | Sistemas | 2x2 | 3x3 | 4x4 | 5x5 |
 | :------: | :-: | :-: | :-: | :-: |
@@ -23,16 +24,16 @@ Determinar si hay y cual es el algorítmo más eficiente en cuanto al tiempo de 
 **Python (normal)**
 | Sistemas | 2x2 | 3x3 | 4x4 | 5x5 |
 | :------: | :-: | :-: | :-: | :-: |
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
+| 1 | 0.0005815029144287109 |  |  |  |
+| 2 | 0.0004379749298095703 |  |  |  |
+| 3 | 0.0005388259887695312 |  |  |  |
 
 **Python (Numpy)**
 | Sistemas | 2x2 | 3x3 | 4x4 | 5x5 |
 | :------: | :-: | :-: | :-: | :-: |
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
+| 1 | 0.0006868839263916016 |  |  |  |
+| 2 | 0.0005564689636230469 |  |  |  |
+| 3 | 0.0006353855133056641 |  |  |  |
 
 
 **Promedios**
