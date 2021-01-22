@@ -16,9 +16,9 @@ Determinar si hay y cual es el algorítmo más eficiente en cuanto al tiempo de 
 **C++**
 | Sistemas | 2x2 | 3x3 | 4x4 | 5x5 |
 | :------: | :-: | :-: | :-: | :-: |
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
+| 1 | 7x10-6 | 7x10-6 | 14x10-6 | 23x10-6 |
+| 2 | 5x10-6 | 7x10-6 | 14x10-6 | 24x10-6 |
+| 3 | 4x10-6 | 7x10-6 | 14x10-6 | ------- |
 
 **Python (normal)**
 | Sistemas | 2x2 | 3x3 | 4x4 | 5x5 |
