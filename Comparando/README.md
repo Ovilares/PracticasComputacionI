@@ -42,3 +42,10 @@ Todos los resultados están registrados en segundos (s).
 | C++ | 0.000005333 | 0.000007 | 0.000014 | 0.0000235 |
 | Python | 0.000519435 | 0.000469605 | 0.000440915 | 0.002027035 |
 | Numpy | 0.000626246 | 0.001115322 | 0.000940482 | 0.001534462 |
+
+## Conclusiones
+El algorítmo, a pesar de ser prácticamente el mismo, tuvo un mejor tiempo de ejecución en C++ y con una enorme diferencia a los tiempos resultantes en Python y Numpy. Esta gran diferencia entre tiempos podría deberse a que C++ es un lenguaje compilado, mientras que python es un lenguaje interpretado.
+
+Analizando el caso particular de C++, observamos que sus tiempos tambien son más constantes para un mismo tamaño de sistema de ecuaciones, y que va aumentando prácticamente en 7 microsegundos por cada nueva ecuación (a partir de un sistema 3x3). También es posible que la diferencia sea tan grande debido a que el algoritmo de C++ se ejecuta en un entorno de desarrollo, mientras que el de python lo hace a través de internet, así que la calidad de la señal pudiese ser un factor de la demora. Habría que ejecutar el código en un entorno de desarrollo independiente de internet para comprobar si efectivamente pasa esto.
+
+En cuanto a python, observamos que existen mejores tiempos utilizando el lenguaje normal que ocupando la libreria numpy, a pesar de que esta está especializada en la construcción y manejo de arreglos. Posiblemente es esta misma razón de ser tan especializada en la construcción de arreglos lo que provoca su mayor tiempo de ejecución, ya que el algorítmo sigue utilizando métodos estandar para resolver el sistema de ecuaciones, y al ser más complejo el arreglo creado por Numpy, tarda más en finalizar la ejecución. Habría que generar un algoritmo de Gauss Jordan que este basado en las funciones propias de Numpy, y medir su tiempo de ejecución con los mismoas sistemas de ecuaciones estudiados para determinar si es esa la razón de su demora.
